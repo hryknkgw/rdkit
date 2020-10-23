@@ -50,6 +50,7 @@ jobs:
         -DRDK_BUILD_PYTHON_WRAPPERS=ON
         -DRDK_INSTALL_INTREE=OFF
         -DPYTHON_EXECUTABLE=/usr/bin/python3
+        -DPYTHON_INSTDIR=/usr/local/lib/python3.6/dist-packages
 
     - name: Build
       working-directory: ${{runner.workspace}}/build
